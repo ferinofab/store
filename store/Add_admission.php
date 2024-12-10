@@ -18,7 +18,7 @@ $id = $_GET['id_product']??null;
     <h1>Добавление информации о поступлении товара</h1>
 
     <?php if($id == null):?>
-        <form action="/handler/Add_admission.php" method="post">
+        <form action="/store/store/handler/Add_admission.php" method="post">
             <input type="datetime-local" placeholder="Дата и время поставки" name="date_time">
             <select name="select" id="">
                 <option value=""></option>

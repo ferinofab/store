@@ -1,5 +1,5 @@
 <?php
-$pdo = require $_SERVER['DOCUMENT_ROOT'].'/db.php';
+$pdo = require $_SERVER['DOCUMENT_ROOT'].'/store/store/db.php';
 $products = $pdo->query("select name,id from product")->fetchAll(PDO::FETCH_ASSOC);
 $id = $_GET['id_product']??null;
 

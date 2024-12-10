@@ -1,5 +1,5 @@
 <?php
-$pdo = require $_SERVER['DOCUMENT_ROOT'].'/db.php';
+$pdo = require $_SERVER['DOCUMENT_ROOT'].'/store/store/db.php';
 ///store
 
 
@@ -22,11 +22,12 @@ $name_pro = $pdo->query("select name from product where id = '$id'")->fetch(PDO:
    .card{
        display: flex;
        flex-direction: column;
+       justify-content: center;
        border-bottom: 2px black solid;
    }
    .cards{
        display: flex;
-       gap: 40px;
+       gap: 60px;
    }
 </style>
 <div class="container">

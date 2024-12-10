@@ -1,5 +1,5 @@
 <?php
-$pdo = require $_SERVER['DOCUMENT_ROOT'].'/db.php';
+$pdo = require $_SERVER['DOCUMENT_ROOT'].'/store/store/db.php';
 ///store
 
 $name = $_POST['name'];
